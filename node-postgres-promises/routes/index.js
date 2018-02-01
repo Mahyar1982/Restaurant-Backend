@@ -9,8 +9,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/api/food', db.getAllFoods);
-router.get('/api/menu', db.getAllMenues);
+router.get('/api/foodfi', db.getAllFoodsFinnish);
+router.get('/api/menufi', db.getAllMenuesFinnish);
+router.get('/api/fooden', db.getAllFoodsEnglish);
+router.get('/api/menuen', db.getAllMenuesEnglish);
+// router.get('/api/order', db.getAllOrders);
+// router.post('/api/order', db.createOrder);
+// router.put('/api/order/:id', db.updateOrder);
+// router.delete('/api/order/:id', db.deleteOrder);
 
 // router.get('/api/adora', db.getAllProductsId);
 // router.get('/api/adoraCode', db.getAllProductsCode);
